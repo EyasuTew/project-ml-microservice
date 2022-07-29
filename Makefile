@@ -4,7 +4,6 @@
 # Dockerfile should pass hadolint
 # app.py should pass pylint
 # (Optional) Build a simple integration test
-
 setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
@@ -26,6 +25,6 @@ lint:
 	hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
-	pylint --disable=R,C,W1203,DL3013 app.py
+	pylint --disable=R,C,W1203 app.py
 
 all: install lint test
