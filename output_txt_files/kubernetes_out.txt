@@ -1,13 +1,8 @@
 <paste log output from Kubernetes-mediated prediction, here>
 
-NAMESPACE     NAME                                             READY   STATUS              RESTARTS   AGE
-default       project-ml-microservice-first-677f79df45-qkf7q   0/1     ContainerCreating   0          11s
-kube-system   coredns-6d4b75cb6d-fkwc6                         1/1     Running             0          4m48s
-kube-system   coredns-6d4b75cb6d-wj86h                         1/1     Running             0          4m48s
-kube-system   etcd-docker-desktop                              1/1     Running             0          4m30s
-kube-system   kube-apiserver-docker-desktop                    1/1     Running             0          3m36s
-kube-system   kube-controller-manager-docker-desktop           1/1     Running             1          3m19s
-kube-system   kube-proxy-fwl62                                 1/1     Running             0          4m48s
-kube-system   kube-scheduler-docker-desktop                    1/1     Running             0          4m16s
-kube-system   storage-provisioner                              1/1     Running             0          4m6s
-kube-system   vpnkit-controller                                1/1     Running             0          4m4s
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
